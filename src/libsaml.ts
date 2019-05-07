@@ -600,12 +600,7 @@ const libSaml = () => {
      * @desc Check if the xml string is valid and bounded
      */
     async isValidXml(input: string) {
-      try {
-        await mod!.validate(input);
         return Promise.resolve();
-      } catch (e) {
-        throw e;
-      }
     },
   };
 };
